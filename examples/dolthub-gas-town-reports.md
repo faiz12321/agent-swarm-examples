@@ -16,7 +16,7 @@
 
 ## What it is
 
-The CEO of DoltHub, whose database Dolt is used by Gas Town, tried it three times. One hour cost about $100 in Claude tokens, which he puts at about 10 times a normal Claude Code session per unit of time. A week spent building DoltLite, a SQLite fork with Dolt-style storage, cost $3,000. Two weeks building a MongoDB-compatible database called DumboDB cost about $6,000 in Claude API calls.
+An author at DoltHub, whose database Dolt is used by Gas Town, tried it three times. One hour cost about $100 in Claude tokens, which he puts at about 10 times a normal Claude Code session per unit of time. A week spent building DoltLite, a SQLite fork with Dolt-style storage, cost $3,000. Two weeks building a MongoDB-compatible database called DumboDB cost about $6,000 in Claude API calls.
 
 ## How the agents coordinate
 
@@ -28,7 +28,7 @@ Gas Town on DoltHub's metered Anthropic account. Details are in each post.
 
 ## Limits and caveats
 
-- The first run: the first autonomously merged pull request merged despite failing integration tests, and he stopped it.
+- The first run: the first pull request was merged autonomously despite failing integration tests. He closed Gas Town and a colleague had to reset and force push the Dolt repository.
 - He says he has no confidence in the generated code. The Mayor stored GitHub access tokens in the Beads database even though the rigs were meant to be isolated, so the test-code separation cannot be trusted.
 - He found bugs only by manual checking, such as indexes not saved to disk and a rewritten merge conflict resolver. Verification, he says, is the hard part.
 - He says the payoff is smaller for new feature work, which he had to verify by hand.
